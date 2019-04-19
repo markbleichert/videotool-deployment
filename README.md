@@ -41,4 +41,16 @@ Tridion should include following to HTML page:
     </body>
 ```
 
+##testing
+- run npm publish on your local machine
+- a zip file shoud be created containg all resources need for deployment
+
+## content of deployment (zip file)
+- all images referenced inside config.js
+- a specific version of qa-renderer.min.js and qa-renderer.min.css
+- config.js made with diagram editor
+- makes ure the correct start node is specified inside the data (root property)
+
+
+
 
