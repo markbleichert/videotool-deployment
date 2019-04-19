@@ -1,0 +1,206 @@
+.qa-module .qa-nav .qa-button.prev,
+.qa-module .next {
+  display: none; }
+
+.qa-module .qa-nav .qa-button.prev.show {
+  display: block;
+  border: none; }
+
+.qa-module .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  display: none; }
+
+.qa-module .qa-nav {
+  position: absolute;
+  margin: 0;
+  top: 60px; }
+  .qa-module .qa-nav .qa-button {
+    width: 45px;
+    height: 90px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-color: #f1f3fb;
+    border-bottom-right-radius: 90px;
+    border-top-right-radius: 90px;
+    -webkit-transition: transform .2s;
+    transition: transform .2s, opacity .2s;
+    opacity: 0.5; }
+    .qa-module .qa-nav .qa-button:hover {
+      transform: translateX(-3px);
+      opacity: 0.8; }
+    .qa-module .qa-nav .qa-button:focus {
+      outline: 0; }
+    .qa-module .qa-nav .qa-button i {
+      font-size: 1.2em;
+      color: #009; }
+
+.qa-module {
+  width: 100%;
+  border: 1px solid #e9e9e9;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  overflow: hidden;
+  transition: height 250ms;
+  position: relative;
+  margin: 10px 0px 10px 0px; }
+  .qa-module__container {
+    border-radius: 5px;
+    overflow: hidden; }
+  .qa-module .qa-placeholder {
+    display: flex;
+    opacity: 1;
+    transition: opacity 430ms;
+    min-height: 200px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px; }
+    .qa-module .qa-placeholder.fadeOut {
+      opacity: 0; }
+  .qa-module .qa-template {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 100%;
+    transition: margin-left 350ms; }
+    .qa-module .qa-template__heading, .qa-module .qa-template__footer, .qa-module .qa-template__body {
+      text-align: center; }
+    .qa-module .qa-template__footer {
+      padding-top: 30px;
+      margin-bottom: 10px; }
+    .qa-module .qa-template__heading {
+      max-width: 80%;
+      margin-top: 0;
+      padding-top: 30px;
+      margin-bottom: 10px;
+      margin-left: auto;
+      margin-right: auto; }
+      @media (max-width: 925px) {
+        .qa-module .qa-template__heading {
+          max-width: 600px; } }
+      @media (max-width: 767px) {
+        .qa-module .qa-template__heading {
+          width: 100%; } }
+    .qa-module .qa-template__body {
+      font-family: Myriad,Segoe UI,Helvetica Neue,Arial,Sans-serif;
+      -webkit-font-smoothing: antialiased;
+      font-style: normal;
+      font-size: 18px;
+      color: #333;
+      max-width: 80%;
+      margin: 0 auto; }
+      .qa-module .qa-template__body img {
+        max-width: 100%; }
+    .qa-module .qa-template--endpoint .qa-button {
+      display: inline-block;
+      padding: 0 20px;
+      width: auto; }
+  .qa-module .content_section {
+    margin-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px; }
+    @media (min-width: 992px) {
+      .qa-module .content_section {
+        margin-bottom: 0; } }
+    .qa-module .content_section__intro {
+      padding: 0 15px; }
+      @media (min-width: 768px) {
+        .qa-module .content_section__intro {
+          padding: 15px 35px 0; } }
+    .qa-module .content_section__columns {
+      display: flex;
+      padding: 0;
+      flex-direction: column; }
+      @media (min-width: 768px) {
+        .qa-module .content_section__columns {
+          padding: 20px;
+          flex-direction: row; } }
+      @media (min-width: 992px) {
+        .qa-module .content_section__columns {
+          padding: 20px;
+          flex-direction: row; } }
+      .qa-module .content_section__columns img {
+        max-width: 100%;
+        height: auto; }
+        @media (min-width: 992px) {
+          .qa-module .content_section__columns img {
+            max-height: 380px; } }
+      .qa-module .content_section__columns__left {
+        text-align: center; }
+      .qa-module .content_section__columns__left, .qa-module .content_section__columns__right {
+        flex: 1;
+        padding: 0 15px; }
+      .qa-module .content_section__columns__right {
+        text-align: left; }
+        @media (min-width: 768px) {
+          .qa-module .content_section__columns__right {
+            padding: 0; } }
+        .qa-module .content_section__columns__right p {
+          margin-bottom: 0;
+          margin-top: 0; }
+  .qa-module .qa-template__options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .qa-module .qa-tile {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(100%);
+    width: calc(100%);
+    height: auto;
+    min-height: 4em;
+    appearance: none;
+    -webkit-appearance: none;
+    border-width: 0;
+    background-color: #fff;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.15);
+    padding: 10px 15px;
+    margin: 5px 15px;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: transform .15s ease-in-out;
+    animation-duration: 1s; }
+    .qa-module .qa-tile:focus {
+      outline: 0; }
+    .qa-module .qa-tile:hover {
+      transform: scale(1.06); }
+      .qa-module .qa-tile:hover .qa-tile__heading {
+        color: #fd6400; }
+    @media (min-width: 768px) {
+      .qa-module .qa-tile {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: calc(50% - 30px);
+        margin: 15px; } }
+    @media (min-width: 992px) {
+      .qa-module .qa-tile {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: calc(25% - 30px);
+        margin: 15px; } }
+    .qa-module .qa-tile__heading {
+      font-family: Myriad, 'Segoe UI', 'Helvetica Neue', Arial, Sans-serif;
+      -webkit-font-smoothing: antialiased;
+      font-style: normal;
+      font-weight: 400;
+      color: #009;
+      font-size: 19px;
+      padding: 10px;
+      display: block;
+      transition: all 0.2s ease-in-out;
+      text-align: center; }
+    .qa-module .qa-tile__image img {
+      max-width: 100%; }
+
+@media (max-width: 767px) {
+  .content-media--description {
+    margin: 0; } }
+
+.content-media--description .rfs-heading-3 {
+  margin-bottom: 0; }
+
+.qa-margin-top {
+  margin-top: 30px; }
+
+
+/*# sourceMappingURL=qa-renderer.min.css.map*/
