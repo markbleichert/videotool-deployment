@@ -1,4 +1,4 @@
-export default {
+window.qa = {
     root: 'abe997a9-0ac9-4ecb-9f68-f08cfeebf67e',
     nodes: [
         {
